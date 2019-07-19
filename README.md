@@ -1,7 +1,14 @@
+How to Deal with Big Data of WikiPedia Dump(found at https://dumps.wikimedia.org/backup-index.html)?
+Hadoop , good option but could not run the Human name recognition algorithm written in python via Hadoop Streaming API.
+So did what hadoop does - convert the big data file into chuncks of data(extra care while diving since data is in XML format) using splitXML.py
+And runing the algorithm on each data chunck and integrating the results
+
 How the extraction works:
 -	The code uses regex and find to get elements related to people from the page.
 -	If element is found then people tag is updated to true 
 -	If the people tag is true then we extract the title to a file.
+
+
 How the Visualization works:
 (We have plotted using sample data)
 -	The code gets value from the file as a tuple.
